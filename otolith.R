@@ -30,8 +30,7 @@ col_fresh <- "#fa6c6d"
 
 #### Dateset 3 ####
 #srca <- read.csv("yr159.csv")
-#age1 <- subset(age,!is.na(age$SrCa))
-#nn1 <- 1
+
 
 #########################
 #### Make Data Table ####
