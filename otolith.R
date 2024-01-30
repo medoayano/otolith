@@ -41,20 +41,20 @@ col_fresh <- "#fa6c6d"
 age1 <- subset(age,!is.na(age$SrCa)) 
 
 # Select time periods >>> 
-# X2months_um or X3months_um or X4months_um or X6months_um or X1year_um #
+# 2m or 3mm or 4m or 6m or 1y #
 
-setting_periods <- "X6months_um"
+setting_periods <- "6m"
 
-if (setting_periods == "X2months_um"){
-  col_year <- data %>% select(X2months_um)
-} else if (setting_periods == "X3months_um") {
-  col_year <- data %>% select(X3months_um)
-} else if (setting_periods == "X4months_um") {
-  col_year <- data %>% select(X4months_um)
-} else if (setting_periods == "X6months_um") {
-  col_year <- data %>% select(X6months_um)
+if (setting_periods == "2m"){
+  col_year <- age1 %>% select(X2months_um)
+} else if (setting_periods == "3mm") {
+  col_year <- age1 %>% select(X3months_um)
+} else if (setting_periods == "4m") {
+  col_year <- age1 %>% select(X4months_um)
+} else if (setting_periods == "6m") {
+  col_year <- age1 %>% select(X6months_um)
 } else {
-  col_year <- data %>% select(X1year_um)
+  col_year <- age1 %>% select(X1year_um)
 }
 
 col_year
@@ -338,17 +338,18 @@ if (setting_dataset == "All"){
 
 data
 
-# X2months_um or X3months_um or X4months_um or X6months_um or X1year_um #
+# Select time periods >>> 
+# 2m or 3mm or 4m or 6m or 1y #
 
-setting_periods <- "X6months_um"
+setting_periods <- "6m"
 
-if (setting_periods == "X2months_um"){
+if (setting_periods == "2m"){
   col_year <- data %>% select(X2months_um)
-} else if (setting_periods == "X3months_um") {
+} else if (setting_periods == "3m") {
   col_year <- data %>% select(X3months_um)
-} else if (setting_periods == "X4months_um") {
+} else if (setting_periods == "4m") {
   col_year <- data %>% select(X4months_um)
-} else if (setting_periods == "X6months_um") {
+} else if (setting_periods == "6m") {
   col_year <- data %>% select(X6months_um)
 } else {
   col_year <- data %>% select(X1year_um)
