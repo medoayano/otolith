@@ -1,4 +1,4 @@
-setwd("/Users/admin/000_github_seabass/Otolith")
+setwd("/Users/admin/github/otolith")
 
 #################
 library(tidyverse)
